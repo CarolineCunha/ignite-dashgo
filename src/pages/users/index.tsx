@@ -48,6 +48,43 @@ export default function UserList() {
                                         Editar
                                         </Button>
                                     </Td>
+                                    
+                                </Tr>
+                                <Tr>
+                                    <Td px="6">
+                                    <Checkbox colorScheme="pink"></Checkbox>
+                                    </Td>
+                                    <Td>
+                                        <Box>
+                                            <Text fontWeight="bold">Usuário</Text>
+                                            <Text fontSize="sm" color="gray.300">usuario@hotmail.com</Text>
+                                        </Box>
+                                    </Td>
+                                    <Td>24 de Junho , 2021</Td>
+                                    <Td>
+                                        <Button as="a" size="sm" fontSize="sm" colorScheme="purple" leftIcon={<Icon as={RiPencilLine} fontSize="16" />}>
+                                        Editar
+                                        </Button>
+                                    </Td>
+                                    
+                                </Tr>
+                                <Tr>
+                                    <Td px="6">
+                                    <Checkbox colorScheme="pink"></Checkbox>
+                                    </Td>
+                                    <Td>
+                                        <Box>
+                                            <Text fontWeight="bold">Usuário Teste</Text>
+                                            <Text fontSize="sm" color="gray.300">teste@hotmail.com</Text>
+                                        </Box>
+                                    </Td>
+                                    <Td>12 de Julho , 2021</Td>
+                                    <Td>
+                                        <Button as="a" size="sm" fontSize="sm" colorScheme="purple" leftIcon={<Icon as={RiPencilLine} fontSize="16" />}>
+                                        Editar
+                                        </Button>
+                                    </Td>
+                                    
                                 </Tr>
                             </Tbody>
                         </Table>
