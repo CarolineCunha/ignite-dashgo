@@ -10,7 +10,7 @@ type SingInFormData = {
 
 export default function SignIn() {
 
-  const { register, handleSubmit, formState } = useForm()
+  const { register, handleSubmit, formState, errors } = useForm()
 
   const handleSignIn: SubmitHandler<SingInFormData> = async (values) => {
     await new Promise(resolve => setTimeout(resolve,2000));
@@ -32,7 +32,7 @@ export default function SignIn() {
       onSubmit={handleSubmit(handleSignIn)}
       > 
       <Stack spacing="4">
-        <Input name="email" type="email" label="E-mail" ref={register} /> 
+        <Input name="email" type="email" label="E-mail" error= {errors.email} ref={register({required: 'E-mail obrigatório'})} /> 
         <Input name="password" type="password" label="Senha" ref={register} /> 
       </Stack>
 
